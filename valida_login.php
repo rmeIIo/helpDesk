@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+
     $usuario_autenticado = false;
 
     $usuarios_app = array(
@@ -20,7 +22,9 @@
 
     if($usuario_autenticado) {
         echo 'Usuario autenticado';
+        $_SESSION['autenticado'] = 'SIM';
     } else {
+        $_SESSION['autenticado'] = 'NAO';
         header('Location: index.php?login=erro');
     }
 ?>
