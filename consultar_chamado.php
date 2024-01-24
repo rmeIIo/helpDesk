@@ -10,7 +10,7 @@ require_once "validador_acesso.php";
   $chamados = array();
   //http://php.net/manual/pt_BR/function.fopen.php
   //abrir arquivo.hd
-  $arquivo = fopen('arquivo.hd','r');
+  $arquivo = fopen('../../helpDesk/arquivo.hd','r');
 
   //enquato houverem registros (linhas) a serem recuperados
   while(!feof($arquivo)){ //testa pelo fim do arquivo
